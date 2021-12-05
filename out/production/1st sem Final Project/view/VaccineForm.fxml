@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="vaccineContext" prefHeight="604.0" prefWidth="802.0" style="-fx-background-color: white;" styleClass="backgroundImage" stylesheets="@../css/GetVaccine.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VaccineFormController">
+    <children>
+        <TableView fx:id="tblVaccine" layoutX="3.0" layoutY="80.0" onMouseClicked="#onTableSelect" prefHeight="331.0" prefWidth="795.0" style="-fx-background-radius: 20px;">
+            <columns>
+                <TableColumn fx:id="colCode" prefWidth="114.0" text="Code" />
+                <TableColumn fx:id="colVaccineName" prefWidth="145.0" text="Vaccine Name" />
+                <TableColumn fx:id="colDescription" prefWidth="269.0" text="Description" />
+                <TableColumn fx:id="colDate" prefWidth="131.0" text="Date" />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="135.0" text="Quantity on Hand" />
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtSearch" focusColor="#284699" layoutX="100.0" layoutY="30.0" onAction="#vaccineSearchOnAction" prefHeight="31.0" prefWidth="601.0" promptText="Search" unFocusColor="#284699">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font></JFXTextField>
+        <Separator layoutX="3.0" layoutY="418.0" prefHeight="7.0" prefWidth="795.0" />
+        <TextField fx:id="txtVaccineId" layoutX="14.0" layoutY="488.0" onKeyReleased="#vaccineIdKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Enter Vaccine ID" style="-fx-background-radius: 50px;" />
+        <TextField fx:id="txtDescription" layoutX="14.0" layoutY="546.0" onKeyReleased="#DescriptionKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Description" style="-fx-background-radius: 50px;" />
+        <TextField fx:id="txtVaccineName" layoutX="289.0" layoutY="488.0" onKeyReleased="#vaccineNameKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Enter Vaccine Name" style="-fx-background-radius: 50px;" />
+        <DatePicker fx:id="txtDate" layoutX="560.0" layoutY="488.0" prefHeight="31.0" prefWidth="233.0" promptText="Select Date" style="-fx-background-radius: 50px;" />
+        <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="49.0" layoutY="425.0" onAction="#updateOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #e6b00e; -fx-background-radius: 50px;" text="Update" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="599.0" layoutY="425.0" onAction="#deleteOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #e6320e; -fx-background-radius: 50px;" text="Delete" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="324.0" layoutY="540.0" onAction="#saveVaccineOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #284699; -fx-background-radius: 50px;" text="Save" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="15.0" />
+            </font>
+        </JFXButton>
+      <TextField fx:id="txtQtyOnHand" layoutX="560.0" layoutY="546.0" onKeyReleased="#qtyOnHandKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Quantity on Hand" style="-fx-background-radius: 50px;" />
+      <Label layoutX="345.0" layoutY="426.0" prefHeight="42.0" prefWidth="137.0" text="Vaccines">
+         <font>
+            <Font name="Gabriola" size="34.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

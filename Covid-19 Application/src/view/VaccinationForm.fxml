@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="VaccinatePaneContext" prefHeight="604.0" prefWidth="803.0" styleClass="backgroundImage" stylesheets="@../css/VaccinationPatient.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VaccinationFormController">
+   <children>
+      <TableView fx:id="tblVaccinePatient" layoutX="5.0" layoutY="74.0" onMouseClicked="#onTableDataSelect" prefHeight="335.0" prefWidth="795.0" style="-fx-background-radius: 20px;">
+        <columns>
+          <TableColumn fx:id="colNic" prefWidth="129.0" text="NIC" />
+          <TableColumn fx:id="colName" prefWidth="151.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="171.0" text="Address" />
+            <TableColumn fx:id="colNameVaccine" prefWidth="109.0" text="Vaccine" />
+            <TableColumn fx:id="colDose1" prefWidth="78.0" text="1st Dose" />
+            <TableColumn fx:id="colDose2" minWidth="0.0" text="2nd Dose" />
+            <TableColumn fx:id="colDose3" prefWidth="76.0" text="3rd Dose" />
+        </columns>
+      </TableView>
+      <Separator layoutX="8.0" layoutY="413.0" prefHeight="13.0" prefWidth="788.0" />
+      <TextField fx:id="txtNic" layoutX="14.0" layoutY="491.0" onKeyReleased="#nicKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Enter NIC No" style="-fx-background-radius: 50px;" />
+      <TextField fx:id="txtAddress" layoutX="14.0" layoutY="549.0" onKeyReleased="#addressKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Enter The Address" style="-fx-background-radius: 50px;" stylesheets="@../css/UsersForm.css" />
+      <TextField fx:id="txtName" layoutX="286.0" layoutY="491.0" onKeyReleased="#nameKeyReleased" prefHeight="31.0" prefWidth="233.0" promptText="Enter The Name" style="-fx-background-radius: 50px;" />
+      <ComboBox fx:id="cmbVaccineName" layoutX="556.0" layoutY="491.0" prefHeight="31.0" prefWidth="233.0" promptText="Vaccine Name" style="-fx-background-radius: 50px;" stylesheets="@../css/UsersForm.css" />
+      <JFXButton fx:id="btnNewRegistration" buttonType="RAISED" layoutX="39.0" layoutY="426.0" onAction="#newRegistrationOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #2ae620; -fx-background-radius: 50px;" text="New Registaion" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtSearch" focusColor="#284699" layoutX="98.0" layoutY="24.0" onAction="#searchPatientOnAction" prefHeight="31.0" prefWidth="589.0" promptText="Search" style="-fx-background-radius: 50px;" unFocusColor="#284699">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="324.0" layoutY="426.0" onAction="#updateOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #e6b00e; -fx-background-radius: 50px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="604.0" layoutY="426.0" onAction="#deleteOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #e6320e; -fx-background-radius: 50px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="324.0" layoutY="543.0" onAction="#savePatientOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #284699; -fx-background-radius: 50px;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="626.0" prefWidth="643.0" styleClass="backgroundImage" stylesheets="@../css/AddUsers.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddUsersFormController">
+   <children>
+      <AnchorPane layoutX="101.0" layoutY="71.0" opacity="0.81" prefHeight="461.0" prefWidth="427.0" style="-fx-background-color: white; -fx-background-radius: 50px;" AnchorPane.bottomAnchor="94.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <AnchorPane fx:id="ancName" layoutX="16.0" layoutY="85.0" prefHeight="42.0" prefWidth="412.0" styleClass="textPane" stylesheets="@../css/UsersForm.css" />
+            <TextField fx:id="txtUsername" layoutX="29.0" layoutY="93.0" onKeyReleased="#addUsersTxtKeyReleased" prefHeight="28.0" prefWidth="380.0" promptText="Dimuthu Lakshan" styleClass="textField" stylesheets="@../css/UsersForm.css" />
+            <Label layoutX="18.0" layoutY="76.0" styleClass="textLabel" stylesheets="@../css/UsersForm.css" text="User Name" />
+            <AnchorPane fx:id="ancEmail" layoutX="13.0" layoutY="173.0" prefHeight="42.0" prefWidth="412.0" styleClass="textPane" stylesheets="@../css/UsersForm.css" />
+            <TextField fx:id="txtEmail" layoutX="26.0" layoutY="181.0" onKeyReleased="#addUsersTxtKeyReleased" prefHeight="28.0" prefWidth="380.0" promptText="abc12@gmail.com" styleClass="textField" stylesheets="@../css/UsersForm.css" />
+            <Label layoutX="15.0" layoutY="164.0" styleClass="textLabel" stylesheets="@../css/UsersForm.css" text="E-Mail" />
+            <AnchorPane fx:id="ancPassword" layoutX="16.0" layoutY="264.0" prefHeight="42.0" prefWidth="412.0" styleClass="textPane" stylesheets="@../css/UsersForm.css" />
+            <TextField fx:id="txtPassword" layoutX="29.0" layoutY="272.0" onKeyReleased="#addUsersTxtKeyReleased" prefHeight="28.0" prefWidth="380.0" promptText="Letters,numbers,@,#" styleClass="textField" stylesheets="@../css/UsersForm.css" />
+            <Label layoutX="18.0" layoutY="255.0" styleClass="textLabel" stylesheets="@../css/UsersForm.css" text="Password" />
+            <AnchorPane fx:id="ancRole" layoutX="13.0" layoutY="352.0" prefHeight="42.0" prefWidth="412.0" styleClass="textPane" stylesheets="@../css/UsersForm.css" />
+            <TextField fx:id="txtRole" layoutX="26.0" layoutY="360.0" onKeyReleased="#addUsersTxtKeyReleased" prefHeight="28.0" prefWidth="380.0" promptText="user or admin" styleClass="textField" stylesheets="@../css/UsersForm.css" />
+            <Label layoutX="15.0" layoutY="343.0" styleClass="textLabel" stylesheets="@../css/UsersForm.css" text="Role" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="253.0" layoutY="559.0" onAction="#saveUsersOnAction" prefHeight="44.0" prefWidth="137.0" style="-fx-background-color: #284699; -fx-background-radius: 50px;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

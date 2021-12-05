@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CssDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/css/AddUsers.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/AgeCalculation.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/AntigenPatient.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/DashBoard.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/ModifyUsers.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/More.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/PcrPatient.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/ToolKit.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/UpdateUsers.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/UsersForm.css" dialect="CLASSIC" />
+    <file url="file://$PROJECT_DIR$/src/css/VaccinationPatient.css" dialect="CLASSIC" />
+  </component>
+</project>

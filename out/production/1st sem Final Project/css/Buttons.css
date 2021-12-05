@@ -1,0 +1,8 @@
+.btn {
+    -fx-background-color: linear-gradient(to left bottom, #0b0c43, #13185d, #192578, #1d3394, #1d42b2, #1759cb, #0d71e3, #0089fb, #00abff, #00c9ff, #00e3fd, #5ffbf1);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.background{
+    -fx-background-color: linear-gradient(to right top, #0b3d89, #0e52a2, #0f68ba, #107fd3, #1296eb);
+}

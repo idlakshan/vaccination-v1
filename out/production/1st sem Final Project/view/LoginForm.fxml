@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-radius: 50px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <left>
+      <AnchorPane prefHeight="300.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="pane1" layoutX="79.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #284699;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="86.0" layoutY="204.0" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="395.0" text="Ministry of Health." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="422.0" prefHeight="27.0" prefWidth="372.0" text="385, ven. Baddegama Wimalawansa " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="449.0" prefHeight="27.0" prefWidth="353.0" text="Thero Mawatha, Colombo 10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="476.0" prefHeight="27.0" prefWidth="353.0" text="Sri Lanka." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="552.0" prefHeight="27.0" prefWidth="353.0" text="(+94)112 694033, (+94)112 675011" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="72.0" fitWidth="117.0" layoutX="83.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-sri-lanka-96.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="80.0" layoutX="208.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-hospital-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane2" layoutX="89.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #45b6fe;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="86.0" layoutY="204.0" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="395.0" text="Ministry of Health." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="422.0" prefHeight="27.0" prefWidth="372.0" text="385, ven. Baddegama Wimalawansa " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="449.0" prefHeight="27.0" prefWidth="353.0" text="Thero Mawatha, Colombo 10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="476.0" prefHeight="27.0" prefWidth="353.0" text="Sri Lanka." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="552.0" prefHeight="27.0" prefWidth="353.0" text="(+94)112 694033, (+94)112 675011" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="72.0" fitWidth="117.0" layoutX="83.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-sri-lanka-96.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="80.0" layoutX="208.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-hospital-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane3" layoutX="89.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1167b1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="86.0" layoutY="204.0" text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="395.0" text="Ministry of Health." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="422.0" prefHeight="27.0" prefWidth="372.0" text="385, ven. Baddegama Wimalawansa " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="449.0" prefHeight="27.0" prefWidth="353.0" text="Thero Mawatha, Colombo 10" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="476.0" prefHeight="27.0" prefWidth="353.0" text="Sri Lanka." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="552.0" prefHeight="27.0" prefWidth="353.0" text="(+94)112 694033, (+94)112 675011" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="72.0" fitWidth="117.0" layoutX="83.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-sri-lanka-96.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="80.0" layoutX="208.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-hospital-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane4" layoutX="89.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #284699;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="630.0" fitWidth="911.0" layoutX="-509.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <Pane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="txtExit" layoutX="351.0" layoutY="14.0">
+               <graphic>
+                  <ImageView fitHeight="39.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-close-window-96%20(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="36.0" layoutY="341.0" prefHeight="31.0" prefWidth="328.0" promptText="User Name" unFocusColor="#284699" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="#284699" labelFloat="true" layoutX="34.0" layoutY="429.0" prefHeight="31.0" prefWidth="332.0" promptText="Password" unFocusColor="#284699" />
+            <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="141.0" layoutY="518.0" onAction="#loginOnAction" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: #284699; -fx-background-radius: 50px;" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="107.0" fitWidth="112.0" layoutX="141.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-lock-512.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="148.0" fitWidth="156.0" layoutX="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Ministry-of-Health_850x460_acf_cropped-1.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>

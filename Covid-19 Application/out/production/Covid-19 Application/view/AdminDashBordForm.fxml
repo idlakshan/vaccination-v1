@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBordFormController">
+   <children>
+      <AnchorPane prefHeight="46.0" prefWidth="200.0" style="-fx-background-color: #284699;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="txtMenu" fitHeight="40.0" fitWidth="47.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-menu-250.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="txtExit" fitHeight="40.0" fitWidth="40.0" layoutX="946.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8-close-window-96%20(1).png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblTime" layoutX="724.0" layoutY="3.0" prefHeight="40.0" prefWidth="216.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="46.0" prefHeight="604.0" prefWidth="56.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="292.0" prefWidth="55.0" spacing="20.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-syringe-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-pcr-test-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+<!--                        <Image url="@../assets/icons8-pcr-test-64%20(1).png" />-->
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-home-150.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-more-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane1" prefHeight="650.0" prefWidth="196.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="804.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="10.0" layoutY="56.0" prefHeight="604.0" prefWidth="56.0" style="-fx-background-color: white;" styleClass="background" stylesheets="@../css/Buttons.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="334.0" prefWidth="55.0" spacing="20.0" AnchorPane.topAnchor="40.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-syringe-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-pcr-test-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="49.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-more-96.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons8-users-128.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane2" layoutX="66.0" layoutY="56.0" prefHeight="604.0" prefWidth="135.0" style="-fx-background-color: white;" styleClass="background" stylesheets="@../css/Buttons.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="55.0">
+         <children>
+            <VBox layoutY="38.0" prefHeight="566.0" prefWidth="135.0" spacing="5.0" style="-fx-background-color: white;" styleClass="background" stylesheets="@../css/Buttons.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="38.0">
+               <children>
+                  <JFXButton fx:id="btnVaccine" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#VaccineOnAction" prefHeight="55.0" prefWidth="135.0" styleClass="btn" stylesheets="@../css/Buttons.css" text="Vaccines">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAntigens" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#testingKitsOnAction" prefHeight="55.0" prefWidth="135.0" styleClass="btn" stylesheets="@../css/Buttons.css" text="ToolKits">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnMore" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#moreOnAction" prefHeight="55.0" prefWidth="135.0" styleClass="btn" stylesheets="@../css/Buttons.css" text="More">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUserModify" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#usersModifyOnAction" prefHeight="55.0" prefWidth="135.0" styleClass="btn" stylesheets="@../css/Buttons.css" text="User Controller">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AdminDashBoardContext" layoutX="197.0" layoutY="46.0" prefHeight="604.0" prefWidth="802.0" styleClass="background" stylesheets="@../css/Buttons.css">
+         <children>
+            <ImageView fitHeight="604.0" fitWidth="603.0" layoutX="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/DashBoard.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

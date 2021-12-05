@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="644.0" prefWidth="643.0" styleClass="backgroundImage" stylesheets="@../css/AgeCalculation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AgeCalculateFormController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="87.0" opacity="0.43" prefHeight="498.0" prefWidth="589.0" style="-fx-background-color: #3297a8; -fx-background-radius: 7em;" />
+      <Label layoutX="38.0" layoutY="163.0" text="Enter BirthDate ">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDate" layoutX="207.0" layoutY="158.0" prefHeight="31.0" prefWidth="79.0" style="-fx-background-radius: 20px;" />
+      <TextField fx:id="txtMonth" layoutX="359.0" layoutY="159.0" prefHeight="31.0" prefWidth="79.0" style="-fx-background-radius: 20px;" />
+      <TextField fx:id="txtYear" layoutX="495.0" layoutY="159.0" prefHeight="31.0" prefWidth="79.0" style="-fx-background-radius: 20px;" />
+      <Label layoutX="315.0" layoutY="159.0" prefHeight="31.0" prefWidth="14.0" text="/">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="459.0" layoutY="159.0" prefHeight="31.0" prefWidth="0.0" text="/">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="197.0" text="DD">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnGetYear" buttonType="RAISED" layoutX="279.0" layoutY="303.0" onAction="#getYearOnAction" prefHeight="52.0" prefWidth="117.0" style="-fx-background-color: #e6b00e; -fx-background-radius: 50px;" text="Get Year" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblYear" layoutX="279.0" layoutY="448.0" prefHeight="82.0" prefWidth="101.0" text="00">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="80.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="197.0" text="MM">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="514.0" layoutY="197.0" text="YYYY">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="465.0" prefHeight="60.0" prefWidth="149.0" text="Years">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
